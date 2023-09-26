@@ -1,0 +1,62 @@
+.todo-grid {
+  background-color: #727272;
+  border-radius: 20px;
+}
+
+.div-gerada {
+  border-radius: 20px;
+  display: grid;
+  padding: 12px 15px;
+  grid-template-columns: 5vh 32vh 14vh 12vh;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  transition: background-color 0.3s ease-out;
+  border-bottom: 1px solid rgba(95, 95, 95, 0.8);
+  max-width: 100%;
+}
+
+.div-gerada:hover {
+  background-color: #474747;
+}
+
+.todo, .todo-date, .remove-button {
+  font-size: 10px;
+  font-family: Roboto mono;
+  border: 1px solid #ababab;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 0px 5px;
+  transition: all 0.2s;
+  text-align: center;
+  min-width: 50%;
+}
+
+.remove-button {
+  cursor: pointer;
+  background-color: #bababa;
+}
+
+.todo:hover, .todo-date:hover, .remove-button:hover {
+  box-shadow: 1.5px 1.5px 0px black;
+  border-color: black;
+}
+
+.remove-button:hover {
+  background-color: rgb(250, 49, 49);
+  font-weight: bold;
+}
+
+.checkbox {
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border: 2px solid #333;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.checkbox:checked {
+  background-color: #00b80f;
+}

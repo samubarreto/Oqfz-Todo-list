@@ -1,0 +1,58 @@
+.adder {
+  background-color: #474747;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 50px;
+  transition: all 0.2s;
+  margin-bottom: 10px;
+}
+
+.adder:hover {
+  box-shadow: 2px 4px 0px black;
+}
+
+.adder-grid-container {
+  display: grid;
+  grid-template-columns: 3vh 25vh 25vh 10vh;
+  align-items: center;
+  justify-content: center;
+  min-width: 70%;
+}
+
+.name-input, .date-input, .add-todo-button {
+  font-size: 14px;
+  font-family: Roboto mono;
+  border: 2px solid #1c1c1c;
+  padding: 10px 15px;
+  margin: 0px 5px;
+  border-radius: 30px;
+  transition: all 0.2s;
+  text-align: center;
+  min-width: 70%;
+}
+
+.add-todo-button {
+  cursor: pointer;
+  background-color: #474747;
+  color: white;
+}
+
+.name-input:hover, .date-input:hover, .add-todo-button:hover, .color-picker:hover {
+  box-shadow: 1.5px 1.5px 0px black;
+  border-color: black;
+}
+
+.add-todo-button:hover {
+  background-color: rgb(41, 238, 41);
+  font-weight: bold;
+  color: black;
+}
+
+.color-picker {
+  margin-right: 10px;
+  border-radius: 0;
+  border-color: black;
+  cursor: pointer;
+  width: 3vh;
+  transition: all 0.15s;
+}

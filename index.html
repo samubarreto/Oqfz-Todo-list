@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oqfz?</title>
+
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/adder.css">
+    <link rel="stylesheet" href="styles/todos.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <main>
+      <div class="main-container">
+        <section class="header">
+          <div class="h1-container">
+            <p class="title">Oqfz?</p>
+          </div>
+        </section>
+        
+        <section class="adder">
+          <div class="adder-grid-container">
+            <input type="color" class="color-picker js-color-input" value="#727272">
+            <input type="text" placeholder="pensa ai" class="js-name-input name-input">
+            <input type="date" class="js-date-input date-input">
+            <button class="add-todo-button" onclick="addTodo();">add</button>
+          </div>
+        </section>
+
+        <section>
+          <div class="js-todo-list todo-grid"></div>
+          <!-- TODO: SUBLINHAR E BORRAR CONTEÚDO DAS BOXES CONCLUÍDAS  -->
+          <!-- FAZER ANIMAÇÕES -->
+        </section>
+      </div>
+    </main>
+
+    <script src="scripts.js"></script>
+    
+  </body>
+</html>
