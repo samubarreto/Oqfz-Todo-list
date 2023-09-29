@@ -9,6 +9,7 @@ body {
   background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
   background: linear-gradient(to right, #24243e, #302b63, #0f0c29); */
   color: white;
+  scroll-behavior: smooth;
 }
 
 .title {
@@ -28,4 +29,16 @@ body {
 div, p, input, button {
   margin: 0;
   padding: 0;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(-65px);
+  }
+  25% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
