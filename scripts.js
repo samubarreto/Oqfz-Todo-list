@@ -26,7 +26,7 @@
     const name = inputElement.value;
 
     const dateInputElement = document.querySelector('.js-date-input');
-    const dueDate = dateInputElement.value;
+    let dueDate = dateInputElement.value;
 
     const colorInputElement = document.querySelector('.js-color-input')
     const selectedColor = colorInputElement.value;
@@ -34,6 +34,10 @@
     if (name != '') {
       
       document.querySelector('.js-advice').innerHTML = ''
+      
+      if (dueDate.length === 0) {
+        dueDate = 'Ø'
+      }
 
       todoList.push({
         name,
@@ -63,4 +67,10 @@
     todoList.splice(index, 1);
     localStorage.setItem('todoListStorage', JSON.stringify(todoList));
     renderTodoList();
+  }
+
+  function detectKeydownEnter(event) {
+    if (event.key === 'Enter') {
+      addTodo()
+    }
   }

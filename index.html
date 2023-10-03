@@ -28,7 +28,7 @@
         <section class="adder">
           <div class="adder-grid-container">
             <input type="color" class="color-picker js-color-input" value="#727272">
-            <input type="text" placeholder="pensa ai" class="js-name-input name-input">
+            <input type="text" placeholder="pensa ai" class="js-name-input name-input" onkeydown="detectKeydownEnter(event)">
             <input type="date" class="js-date-input date-input">
             <button class="add-todo-button" onclick="addTodo();">add</button>
           </div>
