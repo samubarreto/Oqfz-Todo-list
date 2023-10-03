@@ -51,7 +51,7 @@
       document.querySelector('.js-advice').innerHTML = `<div class="advice js-advice" style="
         border: none;
         background-color: red;
-        padding: 8px 60px;
+        padding: 8px 130px;
         border-radius: 50px;
         margin: 0px 0px 10px 0px;
         animation: float ease 2s;
