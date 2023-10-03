@@ -31,7 +31,7 @@
     const colorInputElement = document.querySelector('.js-color-input')
     const selectedColor = colorInputElement.value;
 
-    if (name != '' && dueDate != '') {
+    if (name != '') {
       
       document.querySelector('.js-advice').innerHTML = ''
 
@@ -55,7 +55,7 @@
         border-radius: 50px;
         margin: 0px 0px 10px 0px;
         animation: float ease 2s;
-        z-index: -2;">Preencha todos os campos</div>`
+        z-index: -2;">Preencha o campo "nome"</div>`
     }
   }
 
