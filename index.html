@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oqfz?</title>
 
+    <link rel="icon" href="source/icon.png">
+
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/adder.css">
     <link rel="stylesheet" href="styles/todos.css">
@@ -19,6 +21,11 @@
   <body>
     <main>
       <div class="main-container">
+
+        <section class="advice-container">
+          <div class="js-advice advice"></div>
+        </section>
+
         <section class="header">
           <div class="h1-container">
             <p class="title">Oqfz?</p>
@@ -27,13 +34,12 @@
         
         <section class="adder">
           <div class="adder-grid-container">
-            <input type="color" class="color-picker js-color-input" value="#727272">
-            <input type="text" placeholder="pensa ai" class="js-name-input name-input" onkeydown="detectKeydownEnter(event)">
-            <input type="date" class="js-date-input date-input">
-            <button class="add-todo-button" onclick="addTodo();">add</button>
+            <input type="color" class="color-picker js-color-input" value="#727272" onkeydown="detectKeydownEnter(event)">
+            <input type="text" placeholder="pensa ai" class="js-name-input name-input" onkeydown="detectKeydownEnter(event)" autofocus>
+            <input type="date" class="js-date-input date-input" onkeydown="detectKeydownEnter(event)">
+            <button class="add-todo-button" onclick="addTodo()">add</button>
           </div>
         </section>
-        <div class="advice js-advice"></div>
 
         <section>
           <div class="js-todo-list todo-grid"></div>
