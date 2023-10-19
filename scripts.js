@@ -53,15 +53,12 @@
       renderTodoList();
     } else {
       document.querySelector('.js-advice').innerHTML = `<div class="js-advice" style="
-        position: absolute;
-        text-align: center;
-        top: -50px;
-        border: none;
-        background-color: red;
-        padding: 8px 30px;
-        border-radius: 50px;
-        animation: float ease 3s;
-        z-index: -2;">Preencha o primeiro campo</div>`
+      border: none;
+      background-color: red;
+      padding: 8px 30px;
+      border-radius: 50px;
+      animation: float ease 3s;
+      ">Preencha o primeiro campo</div>`
     }
   }
 
