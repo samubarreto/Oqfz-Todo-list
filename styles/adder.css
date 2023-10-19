@@ -5,7 +5,6 @@
   border-radius: 50px;
   transition: all 0.2s;
   margin-bottom: 10px;
-  z-index: 2;
 }
 
 .adder:hover {

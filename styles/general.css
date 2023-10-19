@@ -1,15 +1,15 @@
 body {
   margin: 0;
   padding: 0;
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: Roboto mono;
   background-color: #1c1c1c;
   /* background: #0f0c29;
   background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
   background: linear-gradient(to right, #24243e, #302b63, #0f0c29); */
   color: white;
-  scroll-behavior: smooth;
 }
 
 .title {
@@ -24,6 +24,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: 14em auto;
+  text-align: center;
 }
 
 div, p, input, button {
@@ -36,9 +37,20 @@ div, p, input, button {
     transform: translateY(-65px);
   }
   25% {
-    transform: translateY(0px);
+    transform: translateY(55px);
+  }
+  75% {
+    transform: translateY(55px)
   }
   100% {
-    transform: translateY(0px);
+    transform: translateY(-65px);
   }
+}
+
+.advice-container {
+  position: fixed;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
 }
