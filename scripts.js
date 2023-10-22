@@ -4,19 +4,32 @@
   function renderTodoList() {
     let todoListHTML = '';
 
-    for (let i = 0; i < todoList.length; i++) {
-      const todoObject = todoList[i];
+    todoList.forEach((todoObject, index) => {
       const { name, dueDate, selectedColor } = todoObject;
       const html = `
-        <div class="div-gerada" style="background-color: ${selectedColor};">
-          <input type="checkbox" class="checkbox">
-          <p class="todo">${name}</p>
-          <p class="todo-date">${dueDate}</p>
-          <button class="remove-button" onclick="deleteTodo(${i})">remove</button>
-        </div>
+      <div class="div-gerada" style="background-color: ${selectedColor};">
+        <input type="checkbox" class="checkbox">
+        <p class="todo">${name}</p>
+        <p class="todo-date">${dueDate}</p>
+        <button class="remove-button" onclick="deleteTodo(${index})">remove</button>
+      </div>
       `;
       todoListHTML += html;
-    }
+    })
+
+    // for (let i = 0; i < todoList.length; i++) {
+    //   const todoObject = todoList[i];
+    //   const { name, dueDate, selectedColor } = todoObject;
+    //   const html = `
+    //     <div class="div-gerada" style="background-color: ${selectedColor};">
+    //       <input type="checkbox" class="checkbox">
+    //       <p class="todo">${name}</p>
+    //       <p class="todo-date">${dueDate}</p>
+    //       <button class="remove-button" onclick="deleteTodo(${i})">remove</button>
+    //     </div>
+    //   `;
+    //   todoListHTML += html;
+    // }
 
     document.querySelector('.js-todo-list').innerHTML = todoListHTML;
   }
