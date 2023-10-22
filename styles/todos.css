@@ -11,13 +11,14 @@
   align-items: center;
   justify-content: space-between;
   border: none;
-  transition: background-color 0.3s ease-out;
+  transition: background-color 0.5s;
   border-bottom: 1px solid rgba(95, 95, 95, 0.8);
   max-width: 100%;
 }
 
 .div-gerada:hover {
-  background-color: #474747;
+  background-color: #474747 !important;
+  transition: background-color 0.2s;
 }
 
 .todo, .todo-date, .remove-button {
