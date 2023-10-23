@@ -1,7 +1,6 @@
 # **Oqfz (TODO list)**
 
-## **Preview**
-> [Click here to see the preview on your web browser](https://samubarreto.github.io/Oqfz-Todo-list/)
+## **[Preview Click Here](https://samubarreto.github.io/Oqfz-Todo-list/)**
 > ![image](https://github.com/sampbrt/Oqfz-Todo-list/assets/70921394/c939b83b-c49f-4eca-86cd-0fefb13e0777)
 > ![image](https://github.com/sampbrt/Oqfz-Todo-list/assets/70921394/eb14ed4f-6cd6-4316-9a9b-2a1460e84dd1)
 
